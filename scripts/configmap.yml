@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+data:
+  DATABASE_URL: "postgresql://sit722_project_part3_user:3Z3E97gt3LVjjauWBVuliOmTBbBeEMjI@dpg-cr8lbiij1k6c73f4dtog-a.singapore-postgres.render.com/sit722_project_part3"

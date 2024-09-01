@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: book-catalog-service
+spec:
+  selector:
+    app: book-catalog
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      name: book-catalog-port
+    - port: TCP
+      port: 81
+      targetPort: 80
+      name: inventory-port
+  type: LoadBalancer
+
+
